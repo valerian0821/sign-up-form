@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('./fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('./fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    font-family: 'norsebold';
+    text-align: center;
+    color: white;
+    display: inline;
+    font-size: 2.6rem;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+}
+
+#background-sect {
+    width: 35vw;
+}
+
+#background-img {
+    max-width: 35vw;
+    max-height: 100vh;
+}
+
+#odin-logo {
+    height: 80px;
+    width: 80px;
+}
+
+#odin-header {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 15vh;
+    position: absolute;
+    bottom: 520px;
+}
+
+#content-sect {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#quote-sect {
+    height: 35vh;
+}
+
+#form-sect {
+    height: 65vh;
+    background-color: white;
+}
+
+#btn-sect {
+    height: 0vh;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#quote-sect,
+#btn-sect {
+    background-color: rgb(242, 242, 242);
+}
+
+.form-labels {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+    margin-bottom: 25px;
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+
+.form-margins {
+    margin-left: 30px;
+    margin-right: 90px;
+}
+
+.margin {
+    margin-left: 30px;
+    margin-right: 190px;
+}
+
+.margin-top {
+    margin-top: 150px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+input {
+    border-color: #E5E7EB;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 3px 3px 1px grey;
+}
+
+input.password:valid {
+    border-color: green;
+}
+
+input.password:invalid {
+    border-color: red;
+}
