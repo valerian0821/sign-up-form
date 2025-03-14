@@ -34,10 +34,14 @@ input {
 
 #background-sect {
     width: 35vw;
+    height: 100vw;
+    overflow: hidden;
 }
 
 #background-img {
-    max-width: 35vw;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
     max-height: 100vh;
 }
 
@@ -59,6 +63,7 @@ input {
 
 #content-sect {
     width: 65vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -68,12 +73,12 @@ input {
 }
 
 #form-sect {
-    height: 65vh;
+    height: 30vh;
     background-color: white;
 }
 
 #btn-sect {
-    height: 0vh;
+    height: 35vh;
 }
 
 p {
@@ -91,7 +96,7 @@ p {
     display: flex;
     flex-direction: column;
     margin-right: 70px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     font-size: 0.8rem;
     font-family: monospace;
 }
@@ -131,4 +136,18 @@ input.password:valid {
 
 input.password:invalid {
     border-color: red;
+}
+
+button {
+    color: white;
+    background-color: #596D48;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+#login {
+    font-size: 0.9rem;
+    font-weight: normal;
 }
